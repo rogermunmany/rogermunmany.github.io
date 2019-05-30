@@ -763,6 +763,33 @@ a:hover {
 }
 
 
+#menuriger {
+
+    padding: 0px;
+    float: right;
+    padding-bottom: 5px;
+
+}
+
+#menuriger li {
+
+
+    display: inline-flex;
+}
+
+#menuriger li a {
+    flex-direction: right;
+    font-family: Arial;
+    font-size: 15px;
+    text-decoration: none;
+    float: right;
+    border right: 0px;
+
+    padding: 10px;
+    background-color: tomato;
+    color: #fff;
+}
+
 
 
 
