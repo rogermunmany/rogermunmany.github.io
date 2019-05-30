@@ -105,7 +105,7 @@
     padding-right: 10px;
     margin-left: 500px;
     margin: auto;
-    overflow: hidden;
+    overflow:hidden;
 
 
 
@@ -299,13 +299,14 @@ Tipus de lletres*/
 
 /* Aquest és el codi CSS del menú*/
 a {
-    text-decoration: none;
-    color: #ffff;
+    
+    color: white;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: x;
+    color: red;
+    text-decoration:line-through;
 }
 
 
@@ -398,6 +399,7 @@ a:hover {
 /* position left */
 #menuToggle input:checked ~ ul {
     transform: none;
+    
 }
 
 /* aqui s'acava */
@@ -416,7 +418,7 @@ a:hover {
     display: inline-flex;
 }
 
-#menucontacto li a {
+#menucontacto li a {            //* menu dalt *//
     flex-direction: right;
     font-family: Arial;
     font-size: 15px;
@@ -437,49 +439,7 @@ a:hover {
 
 
 
-/*aquí comença nom */
 
-@import "compass/css3";
-
-@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
-
-
-body {
-    background: black;
-}
-
-.info {
-    color: white;
-    font: 1em/1 sans-serif;
-    text-align: center;
-}
-
-.info a {
-    color: white;
-}
-
-svg {
-    width: 600px;
-    height: 120px;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    background: black;
-}
-
-
-/* aquí acava nom*/
-
-
-
-.subtitol {
-    font-family: 'Glegoo', serif;
-    color: yellow;
-    text-align: center;
-}
-
-.subtitol:hover {}
 
 
 #apartats {
