@@ -199,6 +199,39 @@
 }
 
 
+
+
+.contenidor_img5 {
+    background-color: gray;
+    border-color: dimgray;
+    color: gray;
+
+    width: 530px;
+
+    height: 220px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 500px;
+    margin: auto;
+    overflow: hidden;
+
+
+
+
+    
+
+}
+.contenidor_img5:hover {
+    
+   filter: grayscale(60%);
+       -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    
+}
+
+
 .imatge_ilumina{
     height: 200px;
     width: 500px;
@@ -206,6 +239,16 @@
     margin: auto;
 
 }
+
+
+.imatge_riger{
+    height: 200px;
+    width: 500px;
+
+    margin: auto;
+
+}
+
 
 /* important, aqui s'acaven les imatges*/
 .fa-instagram {
