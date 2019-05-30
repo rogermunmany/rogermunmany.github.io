@@ -68,14 +68,16 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 500px;
-
-
-
-
     margin: auto;
+    overflow:hidden;
 
 }
 
+.contenidor_img1:hover {
+    filter: grayscale(60%);
+       -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
 
 .imatge_ilustra {
     height: 200px;
@@ -102,12 +104,21 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 500px;
-
-
-
-
     margin: auto;
+    overflow: hidden;
 
+
+
+
+    
+
+}
+
+.contenidor_img2:hover {    //*imatge modelado*//
+     filter: grayscale(60%);
+       -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+ 
 }
 
 
@@ -132,13 +143,19 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 500px;
-
-
-
-
     margin: auto;
-
+    overflow: hidden;
 }
+
+
+
+.contenidor_img3:hover {
+    
+    filter: grayscale(60%);
+       -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
 
 
 .imatge_animacion {
@@ -148,6 +165,7 @@
     margin: auto;
 
 }
+
 
 
 .contenidor_img4 {
@@ -163,12 +181,21 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 500px;
-
-
-
-
     margin: auto;
+    overflow: hidden;
 
+
+
+
+    
+
+}
+.contenidor_img4:hover {
+    
+   filter: grayscale(60%);
+       -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    
 }
 
 
