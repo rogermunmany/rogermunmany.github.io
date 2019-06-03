@@ -77,7 +77,7 @@
         <title>Animación</title>
         <h1> <b> Animación</b></h1>
         <h2> Trabajos </h2>
-        <h3> Demo reel 2D</h3>
+  
         <br>
         <style>
             body {
@@ -143,6 +143,7 @@
 
 
             .mySlides {
+                margin: auto;
                 display: none;
             }
 
@@ -151,16 +152,32 @@
         <body>
 
             <div class="container-display">
-                  <video controls width="720" height="420"      poster="../imatges/animacio/conill.JPG">  
+                  <video controls class="mySlides" width="720" height="420"      poster="../imatges/animacio/conill.JPG">  
        
      <source src="../imatges/animacio/video_reel_Roger_Munmany.mp4" type="video/mp4">
       <source src="../imatges/animacio/Videoreal.webm" type="video/webm">       
+       <track label="Català" kind="subtitles" srclang="cat" src="subtitulos/subtitol.vtt" default>
+        
+         
+         
+        
+                </video>
+                  <video class="mySlides" controls width="720" height="420"      poster="../imatges/animacio/wall-e">  
+       
+     <source src="../imatges/animacio/Escena_Wall-E_Roger_Munmany.mp4" type="video/mp4">
+      <source src="../imatges/animacio/Escena_Wall-E_Roger_Munmany.webm" type="video/webm">       
        <track label="Català" kind="subtitles" srclang="cat" src="subtitulos/subtitol.vtt" default>  
          
     
     </video>   
-               
-
+  <video class="mySlides" controls width="720" height="420"      poster="../imatges/animacio/runing.jpg">  
+       
+     <source src="../imatges/animacio/merry_34_run.mp4" type="video/mp4">
+      <source src="../imatges/animacio/merry_34_run.webm" type="video/webm">       
+       <track label="Català" kind="subtitles" srclang="cat" src="subtitulos/subtitol.vtt" default>  
+         
+    
+    </video> 
                 <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
             </div>
