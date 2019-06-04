@@ -1,4 +1,9 @@
 /*Elements*/
+#demotext {
+color: #FFF;
+
+text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 0 40px #EA2020, 0 0 55px #EA2020, 0 0 75px #EA2020
+}
 * {
     color: white;
     background-color: black;
@@ -745,7 +750,6 @@ a:hover {
     text-decoration: none;
     float: right;
     border right: 0px;
-
     padding: 10px;
     background-color: tomato;
     color: #fff;
@@ -815,6 +819,52 @@ a:hover {
     margin: auto;
 
 }
+
+
+
+
+
+
+
+//*prova text imatges *//
+
+.mySlides:hover{
+    
+    -webkit-transition: opacity 0.2s;
+    opacity: 1;
+    
+    
+}
+
+.container-display:hover .mySlides {
+    opacity: 0;
+    transition-duration: 3s;
+    background-color:darkgray;
+
+}
+
+.headline{
+
+    font-size: 24px;
+    color: white;
+    
+}
+
+.headline2{
+opacity: 0;
+    font-size: 24px;
+    color: white;
+    
+}
+
+
+.container-display:hover .descriptioncyc{
+    
+    
+    
+}
+//* acava la prova *//
+
 
 
 
