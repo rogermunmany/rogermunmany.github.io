@@ -1,9 +1,10 @@
 /*Elements*/
 #demotext {
+font-size: 30px;
 color: #FFF;
-
 text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 0 40px #EA2020, 0 0 55px #EA2020, 0 0 75px #EA2020
 }
+
 * {
     color: white;
     background-color: black;
