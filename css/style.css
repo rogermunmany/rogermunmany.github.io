@@ -66,7 +66,7 @@ text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 
 }
 
 .contenidor_img1 {
-    background-color: gray;
+    background-color: white;
     border-color: dimgray;
     color: gray;
 
@@ -84,9 +84,12 @@ text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 
 }
 
 .contenidor_img1:hover {
+    background-color: red;
     filter: grayscale(60%);
+  box-shadow: 6px 6px 6px 6px #A42910;
        -webkit-transform:scale(1.2);
     transform:scale(1.2);
+    transition-duration: 2s;
 }
 
 .imatge_ilustra {
@@ -102,7 +105,7 @@ text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 
 
 
 .contenidor_img2 {
-    background-color: gray;
+    background-color:white;
     border-color: dimgray;
     color: gray;
 
@@ -124,10 +127,13 @@ text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 
 
 }
 
-.contenidor_img2:hover {    //*imatge modelado*//
-     filter: grayscale(60%);
+.contenidor_img2:hover { 
+    background-color: red;//*imatge modelado*//
+   filter: grayscale(60%);
+      box-shadow: 6px 6px 6px 6px #A42910;
        -webkit-transform:scale(1.2);
     transform:scale(1.2);
+    transition-duration: 2s;
  
 }
 
@@ -141,7 +147,7 @@ text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 
 }
 
 .contenidor_img3 {
-    background-color: gray;
+    background-color: white;
     border-color: dimgray;
     color: gray;
 
@@ -160,10 +166,12 @@ text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 
 
 
 .contenidor_img3:hover {
-    
+    background-color: red;
     filter: grayscale(60%);
+      box-shadow: 6px 6px 6px 6px #A42910;
        -webkit-transform:scale(1.2);
     transform:scale(1.2);
+    transition-duration: 2s;
 }
 
 
@@ -179,7 +187,7 @@ text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 
 
 
 .contenidor_img4 {
-    background-color: gray;
+    background-color: white;
     border-color: dimgray;
     color: gray;
 
@@ -201,10 +209,12 @@ text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 
 
 }
 .contenidor_img4:hover {
-    
+    background-color: red;
    filter: grayscale(60%);
+      box-shadow: 6px 6px 6px 6px #A42910;
        -webkit-transform:scale(1.2);
     transform:scale(1.2);
+    transition-duration: 2s;
     
 }
 
@@ -212,7 +222,7 @@ text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 
 
 
 .contenidor_img5 {
-    background-color: gray;
+    background-color: white;
     border-color: dimgray;
     color: gray;
 
@@ -234,10 +244,12 @@ text-shadow: 0 0 5px #FFF,  0 0 15px #FFF, 0 0 20px #EA2020, 0 0 30px#EA2020, 0 
 
 }
 .contenidor_img5:hover {
-    
+    background-color: red;
    filter: grayscale(60%);
+      box-shadow: 6px 6px 6px 6px #A42910;
        -webkit-transform:scale(1.2);
     transform:scale(1.2);
+    transition-duration: 2s;
     
 }
 
