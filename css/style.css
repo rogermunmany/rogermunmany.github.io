@@ -842,7 +842,7 @@ a:hover {
 
 //*prova text imatges *//
 
-.mySlides:hover{
+//*.mySlides:hover{
     
     -webkit-transition: opacity 0.2s;
     opacity: 1;
