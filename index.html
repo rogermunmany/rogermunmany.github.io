@@ -1,190 +1,185 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
+<title>Roger Munmany</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>var slideIndex = 1;
+showSlides(slideIndex);
 
-<head>
-    <meta charset="UTF-8">
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    <title>Portfafolio Roger Munmany</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="imatges/altres/icono_roger.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="imatges/altres/icono_roger.ico">
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+    <style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+<body class="w3-black">
 
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="Ilustracion/imatges/altres/IMG-20181021-WA0018.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>INICIO</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>SOBRE MI</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROYECTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACTO</p>
+  </a>
+</nav>
 
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">SOBRE MI</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROYECTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACTO</a>
+  </div>
+</div>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Glegoo|Sunflower:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet"> 
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Roger Munmany.</h1>
+    <p>Desarollador de Videojuegos 3D.</p>
+    <img src="Ilustracion/imatges/altres/IMG-20181021-WA0018.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
 
-    <link rel="stylesheet" href="css/style.css">
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Sobre Mi</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+        Me llamo Roger Munmany Campàs, nací en Vic pero ahora mismo vivo en un pueblo llamado Torelló ubicada en la provincia de Barcelona, España. Tengo 20 años y ahora mismo soy un estudiante de ciclo superior de animación 3d, videojuegos y entornos interactivos en la Universidad de Vic, Barcelona. Soy una persona muy tranquila pero a la vez activa, agradable, feliz, puedo trabajar solo o con gente, soy un poco perfeccionista y muy positiva. Mis hobbies aparte de jugar a algunos videojuegos, son dibujar, escuchar música, jugar al ajedrez, ir a nadar cuando puedo y mirar películas y muchas series. Mi meta es encontrar una faena que me guste y que sea de gran calidad en la cual pueda pasarme horas y horas haciéndola.
+    </p>
+       <button class="w3-button w3-light-grey w3-padding-large w3-section">
+           <a href="https://rogermunmany.github.io/imatges/altres/cv%20roger_artistic.pdf"><i class="fa fa-download"></i></a> Descargar Curriculum
+    </button>
+    <h3 class="w3-padding-16 w3-text-light-grey">Habilidades</h3>
+    <p class="w3-wide">Desarollar VideoJuegos</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div>
+    <p class="w3-wide">Entornos Interactivos</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div>
+    <p class="w3-wide">Animación 3D</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+    </div><br>
 
-</head>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">MIS PROYECTOS</h2>
+    <hr style="width:200px" class="w3-opacity">
 
-<body>
-    <!-- Aquí comença el codi CSS del menú CSS-->
-    <nav role="navigation">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-             
-            <ul id="menu">
-                <a href="index.html" title="Índice">
-                    <li>Home</li>
-                </a>
-                <a href="como_soy/comosoy.html" title="Como Soy">
-                    <li>Cómo soy</li>
-                </a>
-                <a href="contacto/contacto.html" title="Contacto">
-                    <li>Contacto</li>
-                </a>
-                
-                
-            </ul>
-        </div>
-    </nav>
-    <!-- -->
 <br>
-<br>
-  <div id="demotext">
-   <h1 class="centered espai"> Roger Munmany Campàs</h1>
+      <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="Ilustracion/imatges/model/render_dia.jpg" style="width:100%">
+        <img src="Ilustracion/imatges/model/render_chinese_teample.jpg" style="width:100%">
+        <img src="Ilustracion/imatges/model/canyon_render.jpg" style="width:100%">
+      </div>
 
+      <div class="w3-half">
+        <img src="Ilustracion/imatges/model/render_hacha.jpg" style="width:100%">
+        <img src="Ilustracion/imatges/model/rifle_remington_700_render.jpg" style="width:100%">
+          <img src="Ilustracion/imatges/model/turret_image.jpeg" style="width:100%">
+        
+      </div>
+    <!-- End photo grid -->
     </div>
 
+  <!-- End Portfolio Section -->
+  </div>
 
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contacta Conmigo</h2>
+    <hr style="width:200px" class="w3-opacity">
 
-    <!-- Aquí comença el nom personalitzat CSS-->
-    <div class="wrapper">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Torelló, Barcelona</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +34 644343572/+34 938504958</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: rogermunmany@gmail.com</p>
+    </div><br>
+    <p>Mantengámonos en contacto. Envíeme un mensaje:</p>
 
-        <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600px" height="100px" viewBox="0 0 600 100">
-            <style type="text/css">
-                < ![CDATA[ text {
-                    filter: url(#filter);
-                    fill: white;
-                    font-family: 'Share Tech Mono', sans-serif;
-                    font-size: 50px;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
-                }
+    <form  target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Nombre"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Asunto" required name="Asunto"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mensaje" required name="Mensaje"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a href="https://www.instagram.com/rogers_designs/?hl=es"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/DesignsRogers?lang=en"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/roger-munmany-9881b4187/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">Creado por Roger Munmany</p>
+  <!-- End footer -->
+  </footer>
 
-                ]]>
-
-            </style>
-            <defs>
-
-                <filter id="filter">
-                    <feFlood flood-color="black" result="black" />
-                    <feFlood flood-color="red" result="flood1" />
-                    <feFlood flood-color="limegreen" result="flood2" />
-                    <feOffset in="SourceGraphic" dx="3" dy="0" result="off1a" />
-                    <feOffset in="SourceGraphic" dx="2" dy="0" result="off1b" />
-                    <feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a" />
-                    <feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b" />
-                    <feComposite in="flood1" in2="off1a" operator="in" result="comp1" />
-                    <feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
-
-                    <feMerge x="0" width="100%" result="merge1">
-                        <feMergeNode in="black" />
-                        <feMergeNode in="comp1" />
-                        <feMergeNode in="off1b" />
-
-                        <animate attributeName="y" id="y" dur="4s" values='104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px' keyTimes='0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1' repeatCount="indefinite" />
-
-                        <animate attributeName="height" id="h" dur="4s" values='10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px' keyTimes='0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1' repeatCount="indefinite" />
-                    </feMerge>
-
-
-                    <feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
-                        <feMergeNode in="black" />
-                        <feMergeNode in="comp2" />
-                        <feMergeNode in="off2b" />
-
-                        <animate attributeName="y" id="y" dur="4s" values='103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;' keyTimes='0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1' repeatCount="indefinite" />
-
-                        <animate attributeName="height" id="h" dur="4s" values='0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px' keyTimes='0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1' repeatCount="indefinite" />
-                    </feMerge>
-
-                    <feMerge>
-                        <feMergeNode in="SourceGraphic" />
-
-                        <feMergeNode in="merge1" />
-                        <feMergeNode in="merge2" />
-
-                    </feMerge>
-                </filter>
-
-            </defs>
-
-            <g>
-            
-            </g>
-        </svg>
-
-
-
-
-        <!-- -->
-
-
-
-<p>
-Actualmente estoy cursando Animación 3d,
-videojuegos y entornos interactivos en la UVic.
-Soy un chico muy responsable, trabajador,
-alegre, simpático, activo, soy perfeccionista y aprendo
-rápidamente.
-Me gusta todo lo relacionado con la
-informática y mis hobbies aparte de jugar a videojuegos, son dibujar, jugar mucho al ajedrez, hacer
-deporte cuando puedo, escuchar música, la
-fotografía y viajar. Mi meta es encontrar una faena que me guste y que sea de gran calidad en la cual pueda pasarme horas y horas haciéndola.  </p>
-
-<br>
-
-
-
-        <i id="apartats">
-            
-
-            <h2> <b>
-                    <div class="contenidor_img2">
-                        <a href="modelados_3d/modelados_3d.html"Modelado 3d> <img src="imatges/model/arma.jpeg" class="imatge_modelado" alt="imatge_modelado"> Modelados 3d</a> </div>
-                </b> </h2>
-                 <h2><b>
-                   
-                    <div class="contenidor_img5">
-                        <a href="rigging/rigging.html"Rigging> <img src="imatges/riger/rigportada.jpg" class="imatge_riger" alt="imatge_riger"> Rigging</a> </div>
-                </b> </h2>
-
-            <h2> <b>
-                    <div class="contenidor_img3">
-                        <a href="animacion/animacion.html"Animación> <img src="imatges/animacio/conill1.jpg" class="imatge_animacion" alt="imatge_animacion"> Animación</a> </div>
-                </b> </h2>
-
-
-            <h2> <b>
-                    <div class="contenidor_img4">
-                        <a href="iluminacion/Iluminacion.html" Iluminación> <img src="imatges/iluminacion/drac_blau1.jpg" class="imatge_ilumina" alt="imatge_ilumina"> Iluminación</a> </div>
-                </b> </h2>
-                
-                <h2><b>
-                    <div class="contenidor_img1">
-                        <a href="Ilustracion/ilustracion.html"Ilustración> <img src="imatges/ilustracion/imatge_ilustra.JPG" class="imatge_ilustra" alt="imatge_ilustra"> Ilustración</a> </div>
-                </b> </h2>
-                
-                
-        </i>
-
-
-        <br>
-        <br>
-        <div class="xxss">
-            <a href="https://twitter.com/DesignsRogers?lang=en"> <i class="fab fa-twitter"></i> </a>
-            <a href="https://www.linkedin.com/in/roger-munmany-9881b4187"> <i class="fab fa-linkedin"></i> </a>
-            <a href="https://www.instagram.com/rogers_designs/?hl=es"><i class="fab fa-instagram"></i> </a>
-        </div>
-    </div>
+<!-- END PAGE CONTENT -->
+</div>
 
 </body>
-
 </html>
